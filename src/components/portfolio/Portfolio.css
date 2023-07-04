@@ -19,7 +19,20 @@
 
 .portfolio__item-image {
     border-radius: 1.5rem;
+    width: 100%;
+    height: 300px;
     overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  transform: translateY(0);
+  transition: transform 2s ease-in-out;
+}
+
+.portfolio__item-image:hover .image{
+    transform: translateY(calc(-100% + 300px));
 }
 
 .portfolio__item h3 {
@@ -32,6 +45,14 @@
 }
 
 .portfolio__item h6 {
+    color: var(--color-secondary);
+}
+.portfolio__item a {
+    color: var(--color-secondary);
+    margin-right: 40px;
+    margin-left: 5px;
+}
+.icon{
     color: var(--color-secondary);
 }
 
@@ -51,7 +72,7 @@
 /* medium sized devices */
 @media screen and (max-width: 1024px){
     .portfolio__container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1.2rem;
     }
 }

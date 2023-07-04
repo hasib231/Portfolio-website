@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Experience.css";
-import {FaReact, FaHtml5, FaGitAlt, FaJava} from 'react-icons/fa';
-import {SiJavascript, SiTypescript, SiCss3, SiSpringboot, SiCplusplus} from 'react-icons/si';
+import {FaReact, FaHtml5, FaGitAlt, FaJava,FaNode} from 'react-icons/fa';
+import {SiJavascript, SiTypescript, SiCss3, SiSpringboot, SiCplusplus,SiExpress} from 'react-icons/si';
 import {MdHttp} from 'react-icons/md';
 import {TbBrandNextjs} from 'react-icons/tb';
 
@@ -59,15 +59,15 @@ const Experience = () => {
             <h3>Back End</h3>
                 <div className="experience__content">
                     <article className='experience__details'>
-                        <FaJava className='experience__details-icon'/>
+                        <FaNode className='experience__details-icon'/>
                         <div className='experience__details-name'>
-                            <h4>Java</h4>
+                            <h4>Node.js</h4>
                         </div>
                     </article>
                     <article className='experience__details'>
-                        <SiSpringboot className='experience__details-icon'/>
+                        <SiExpress className='experience__details-icon'/>
                         <div className='experience__details-name'>
-                            <h4>Spring Boot</h4>
+                            <h4>Express.js</h4>
                         </div>
                     </article>
                     <article className='experience__details'>
